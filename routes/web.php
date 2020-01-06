@@ -26,3 +26,7 @@ Route::prefix('test/caesar')->group(function(){//前台登录页
     Route::any('geta','test\CaesarController@geta');//后台列表页
     Route::any('seta','test\CaesarController@seta');//后台列表页
 });
+//对称解密
+Route::prefix('test/signal')->group(function(){//前台登录页
+    Route::any('setsignal','test\SignalController@setsignal');//后台列表页
+});
