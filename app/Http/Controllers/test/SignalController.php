@@ -10,6 +10,7 @@ class SignalController extends Controller
     public function setsignal()
     {
     	$data= request()->get('n_data');
+        // echo $data;die;
     	$data=base64_decode($data);
     	//加密方式
     	$method='AES-256-CBC';
